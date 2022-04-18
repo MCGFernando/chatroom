@@ -50,7 +50,23 @@
       <div class="update-mssg"></div>
     </form>
   </div>
-  
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script>
+      const config = {
+        apiKey: "AIzaSyAjB1U_hgqtHYWbzj3xUVh7imc9PYlp5v0",
+        authDomain: "modernjs-aef40.firebaseapp.com",
+        projectId: "modernjs-aef40",
+        storageBucket: "modernjs-aef40.appspot.com",
+        messagingSenderId: "1068169198476",
+        appId: "1:1068169198476:web:4e175ac99c8ac724e0b4a9",
+        measurementId: "G-JJZDQXNY9K",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(config);
+      const db  = firebase.firestore()
+    </script>
   <script src="scripts/chat.js"></script>
   <script src="scripts/ui.js"></script>
   <script src="scripts/app.js"></script>
